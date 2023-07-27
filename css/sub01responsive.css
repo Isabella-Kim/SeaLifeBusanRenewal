@@ -1,0 +1,192 @@
+@media (max-width: 414px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* header */
+  header {
+    position: sticky;
+  }
+  /* main */
+  main {
+    position: relative;
+  }
+  .sub02_main_txt {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .sub02_main_txt h2 {
+    font-size: var(--h3);
+    margin-bottom: 1.5rem;
+    margin: auto;
+  }
+  .sub02_main_txt p {
+    font-size: var(--subMenu-title2);
+    font-weight: 300;
+    margin: auto;
+  }
+  /* 티켓 슬라이드 */
+  .ticket {
+    overflow-x: hidden;
+  }
+  .ticket_content h2 {
+    width: 100%;
+    margin: 10rem auto 1rem auto;
+    font-size: var(--h3);
+    width: 90%;
+  }
+  .ticket_content p {
+    font-size: var(--subMenu-title2);
+    font-weight: 300;
+  }
+  .swiper-button-next a > img,
+  .swiper-button-prev a > img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 1rem auto;
+    /* margin-bottom: 1rem; */
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: var(--swiper-navigation-top-offset, -5%);
+    width: 50px;
+    height: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 30%);
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 30%);
+    left: auto;
+  }
+
+  /* 브릭맨 원더월드 */
+  .brickMan_inner {
+    width: 100%;
+    display: block;
+  }
+  .brickMan_txt {
+    margin-top: 1.5rem;
+  }
+  .brickMan_txt h2 {
+    font-size: var(--h3);
+    margin-bottom: 1.5rem;
+  }
+  .brickMan_txt p {
+    margin: auto;
+    width: 90%;
+    font-size: var(--quickMenu-info);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  .brickMan_txt button {
+    width: 45%;
+    height: 5%;
+    font-size: var(--h5);
+    padding: 0.5rem 0;
+  }
+  .brickMan_imgs {
+    width: 100%;
+  }
+  .brickMan_imgs a img {
+    width: 60%;
+  }
+  .brickMan_imgs a:nth-child(1) {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+  }
+  .brickMan_imgs a:nth-child(2) {
+    position: absolute;
+    top: 8%;
+    right: -10%;
+    animation-delay: 0.2s;
+  }
+  .brickMan_imgs a:nth-child(3) {
+    position: absolute;
+    top: 35%;
+    left: -10%;
+    animation-delay: 0.6s;
+  }
+  .brickMan_imgs a:nth-child(4) {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    animation-delay: 0.9s;
+  }
+  /* 방문일정 변경 & 단체관람 */
+  .visitor_inner {
+    width: 100%;
+    height: 1600px;
+  }
+  .calendar {
+    margin-top: 1rem;
+  }
+  .gruop {
+    margin-top: 2rem;
+  }
+  .calendar_txt h2,
+  .group_txt h2 {
+    font-size: var(--h3);
+    margin-bottom: 1rem;
+  }
+  .calendar_txt p,
+  .group_txt p {
+    font-size: var(--quickMenu-info);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .calendar_content,
+  .group_content {
+    display: block;
+  }
+  .calendar_content img,
+  .group_content img {
+    width: 65%;
+    height: 65%;
+  }
+  .calendar_content img:nth-child(1),
+  .group_content img:nth-child(1) {
+    margin-bottom: 1rem;
+  }
+  .change,
+  .student {
+    margin-right: 0;
+  }
+  .change_txt h3,
+  .check_txt h3,
+  .student_txt h3,
+  .general_txt h3 {
+    font-size: var(--h4);
+  }
+  .change_txt p,
+  .check_txt p,
+  .student_txt p,
+  .general_txt p {
+    font-size: var(--subMenu-title2);
+    width: 70%;
+  }
+  .change_txt p,
+  .check_txt p {
+    margin: 0 auto 1rem auto;
+  }
+  /* 주의사항 */
+  .caution_inner {
+    width: 90%;
+  }
+  .caution_heading h2 {
+    font-size: var(--h5);
+  }
+  .caution_content {
+    padding: 1.5rem 2.5rem;
+  }
+  .caution_content p,
+  .caution_content li {
+    font-size: var(--quickMenu-info);
+  }
+}
