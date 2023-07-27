@@ -1,0 +1,514 @@
+/* header */
+header {
+  background-color: rgba(172, 177, 227, 0.9);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* main */
+main {
+  width: 100%;
+  height: 377px;
+  background: url(../../02.디자인/images/sub01_ticketBuy/subVisual/sub_visual.svg)
+    no-repeat;
+  position: relative;
+}
+.sub02_main_inner {
+  width: 68.75%;
+  height: 377px;
+  margin: auto;
+}
+.sub02_main_txt {
+  width: 35%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sub02_main_txt h2 {
+  font-family: "YdestreetB";
+  font-size: var(--h2);
+  color: var(--mainVisual-title);
+  margin-bottom: 1rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sub02_main_txt p {
+  font-size: var(--base-size);
+  font-weight: 300;
+  color: #fff;
+}
+
+/* 티켓 슬라이드 */
+.ticket {
+  position: relative;
+}
+.ticket_inner {
+  width: 68.75%;
+  height: 1060px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.ticket::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(242, 242, 242, 0.5);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.ticket_content h2 {
+  font-family: "YdestreetB";
+  font-size: var(--h2);
+  font-weight: 900;
+  color: var(--primary);
+  margin: 10rem auto 1.5rem auto;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ticket_content p {
+  font-size: var(--base-size);
+  font-weight: 300;
+}
+.swiper {
+  overflow: unset;
+}
+.ticket_box_wrap {
+  margin-top: 4rem;
+}
+.ticket_box {
+  width: 275px;
+  height: fit-content;
+  border-radius: 30px 30px 30px 30px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.ticket_box:hover {
+  box-shadow: 4px 4px 2px rgba(77, 77, 77, 0.12);
+  transform: translateY(-3%);
+}
+.ticket_box > a img {
+  width: 275px;
+  height: 214px;
+  border-radius: 30px 30px 0 0;
+  transition: 0.3s;
+}
+.ticket_box .ticket_text {
+  width: 275px;
+  height: fit-content;
+  border-radius: 0 0 30px 30px;
+  background-color: var(--bg-01);
+  text-align: center;
+  align-items: center;
+}
+.ticket_text > a {
+  font-size: var(--quickMenu-info);
+}
+.ticket_text > a img {
+  transform: rotate(0);
+}
+.ticket_text > a img.active {
+  transform: rotate(180deg);
+}
+.ticket_text h4 {
+  font-size: var(--base-size);
+  font-weight: 900;
+  padding-top: 0.5rem;
+}
+.ticket_box:nth-child(1)::after,
+.ticket_box:nth-child(2)::after,
+.ticket_box:nth-child(3)::after {
+  background: url(../../02.디자인/images/sub01_ticketBuy/ticket/kinds/today.svg)
+    no-repeat 0px 0px;
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+.ticket_box:nth-child(4)::after,
+.ticket_box:nth-child(5)::after,
+.ticket_box:nth-child(6)::after,
+.ticket_box:nth-child(7)::after {
+  background: url(../../02.디자인/images/sub01_ticketBuy/ticket/kinds/preReserve.svg)
+    no-repeat 0px 0px;
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+.ticket_box:nth-child(8)::after,
+.ticket_box:nth-child(9)::after {
+  background: url(../../02.디자인/images/sub01_ticketBuy/ticket/kinds/yearly.svg)
+    no-repeat 0px 0px;
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+.ticket_box:nth-child(10)::after {
+  background: url(../../02.디자인/images/sub01_ticketBuy/ticket/kinds/corporation.svg)
+    no-repeat 0px 0px;
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+}
+.viewMore {
+  display: none;
+  margin-top: 0.8rem;
+}
+.viewMore h5 {
+  font-size: var(--h5);
+  margin-bottom: 0.2rem;
+}
+.viewMore ul li {
+  font-size: var(--quickMenu-info);
+}
+.viewMore.active {
+  display: block;
+}
+.ticket_price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 0.8rem;
+  margin: 3.5rem 0.8rem 0.8rem 0.8rem;
+}
+.ticket_price p {
+  font-weight: 600;
+  font-size: var(----subMenu-content);
+}
+.ticket_text > p {
+  font-size: var(--info-small);
+  margin-bottom: 0.2rem;
+}
+.ticket_text button {
+  background-color: var(--primary75);
+  border-radius: 20px;
+  color: #fff;
+  font-size: var(--base-size);
+  padding: 0.5rem 2rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+.swiper-pagination {
+  position: absolute;
+  top: 110%;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--primary75));
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: 110%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, -20%);
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 20%);
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 20%);
+  left: auto;
+}
+
+/* 배경이미지 */
+.sub01_bg {
+  width: 100%;
+  background: url(../../02.디자인/images/sub01_ticketBuy/bg.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: absolute;
+  z-index: -10;
+}
+
+/* 브릭맨 원더월드 */
+.brickMan_inner {
+  width: 68.75%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+  /* position: relative; */
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.brickMan_txt {
+  flex: 1;
+}
+.brickMan_txt h2 {
+  font-family: "YdestreetB";
+  font-size: var(--h2);
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.brickMan_txt p {
+  font-size: var(--base-size);
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+.brickMan_txt button {
+  font-size: var(--h4);
+  color: white;
+  background-color: var(--primary75);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+.brickMan_txt button:hover {
+  background-color: var(--primary);
+}
+.brickMan_imgs {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.brickMan_imgs a {
+  animation: wave 1s infinite;
+}
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.brickMan_imgs a:nth-child(1) {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+.brickMan_imgs a:nth-child(2) {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  animation-delay: 0.2s;
+}
+.brickMan_imgs a:nth-child(3) {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  animation-delay: 0.6s;
+}
+.brickMan_imgs a:nth-child(4) {
+  position: absolute;
+  top: 55%;
+  right: 25%;
+  animation-delay: 0.9s;
+}
+/* 방문일정변경 & 단체관람 */
+.visitor_inner {
+  width: 68.75%;
+  height: 1384px;
+  margin: auto;
+  text-align: center;
+}
+.calendar_txt h2,
+.group_txt h2 {
+  font-family: "YdestreetB";
+  font-size: var(--h2);
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.calendar_txt p,
+.group_txt p {
+  font-size: var(--base-size);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.calendar {
+  margin-top: 8rem;
+}
+.calendar_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change,
+.check,
+.student,
+.general {
+  position: relative;
+  overflow: hidden;
+}
+.change,
+.student {
+  margin-right: 1.5rem;
+}
+.change a img,
+.check a img,
+.student a img,
+.general a img {
+  transition: 0.3s;
+}
+.change a img:hover,
+.check a img:hover,
+.student a img:hover,
+.general a img:hover {
+  transform: scale(1.2);
+}
+.change_txt,
+.check_txt,
+.student_txt,
+.general_txt {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.change_txt h3,
+.check_txt h3,
+.student_txt h3,
+.general_txt h3 {
+  font-family: "YdestreetB";
+  font-size: var(--h3);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.student_txt h3,
+.general_txt h3 {
+  margin-bottom: 1.5rem;
+}
+.change_txt p,
+.check_txt p,
+.student_txt p,
+.general_txt p {
+  font-size: var(--h5);
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.change_txt button,
+.check_txt button,
+.student_txt button,
+.general_txt button {
+  border: 5px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+.change_txt button:hover,
+.check_txt button:hover,
+.student_txt button:hover,
+.general_txt button:hover {
+  background-color: #fff;
+  color: #333;
+}
+.group {
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+  margin-top: 6rem;
+  z-index: 10;
+}
+.group_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 주의사항 */
+.caution {
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+}
+.caution_inner {
+  width: 68.75%;
+  /* height: 1024px; */
+  margin: auto;
+  text-align: center;
+}
+.caution_box01,
+.caution_box02 {
+  box-shadow: 4px 4px 2px rgba(48, 48, 48, 0.12);
+}
+.caution_box02 {
+  margin-bottom: 2rem;
+}
+.caution_heading {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: var(--primary75);
+  padding: 0 3rem;
+  height: 60px;
+}
+.caution_heading h2 {
+  font-size: var(--h3);
+  font-family: "YdestreetB";
+  font-weight: 900;
+  color: #fff;
+}
+.caution_heading a > img.act {
+  transform: rotate(180deg);
+}
+.caution_content {
+  background-color: #fcfcfc;
+  text-align: left;
+  padding: 2rem 5rem;
+  line-height: 20px;
+  display: none;
+}
+.caution_content.act {
+  display: block;
+}
+.caution_content ul li {
+  list-style: circle;
+  margin-bottom: 1rem;
+}
+.caution_content p,
+.caution_content li {
+  font-size: var(--h5);
+}
+.caution_content p {
+  margin-bottom: 1rem;
+}
+/* footer */
+.bubble {
+  z-index: -1;
+}
+/* quickBtns */
+.quickBtns {
+  top: 15%;
+}

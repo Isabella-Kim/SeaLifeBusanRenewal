@@ -1,0 +1,76 @@
+@media (max-width: 414px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* header */
+  header {
+    position: sticky;
+  }
+  /* main */
+  main {
+    position: relative;
+  }
+  .sub02_main_txt {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .sub02_main_txt h2 {
+    font-size: var(--h3);
+    margin-bottom: 1.5rem;
+  }
+  .sub02_main_txt p {
+    font-size: var(--subMenu-title2);
+    font-weight: 300;
+  }
+  /* 안전수칙 */
+  .sub02_safeGuide_inner {
+    width: 100%;
+  }
+  .sub02_safeGuide_inner h2 {
+    width: 100%;
+    margin: 5rem 0 3rem 0;
+    font-size: var(--h4);
+  }
+  .sub02_safeGuide_wrap > li {
+    margin-bottom: 5rem;
+  }
+  .sub02_safeGuide_wrap {
+    width: 100%;
+  }
+  .sub02_safeGuide_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub02_safeGuide_content img {
+    width: 200px;
+    height: 200px;
+  }
+  .sub02_safeGuide_txt {
+    width: 200%;
+    text-align: center;
+  }
+  .sub02_safeGuide_txt h3 {
+    font-size: var(--base-size);
+  }
+  .sub02_safeGuide_txt p {
+    font-size: var(--quickMenu-info);
+  }
+  /* 고객의 의무 */
+  .duty_inner {
+    width: 100%;
+    height: 600px;
+  }
+  .duty_content img {
+    width: 200px;
+    height: 200px;
+  }
+  .duty_txt h3 {
+    font-size: var(--base-size);
+  }
+  .duty_txt p {
+    font-size: var(--quickMenu-info);
+  }
+}

@@ -1,0 +1,484 @@
+@media all and (max-width: 1700px) {
+  .mega_menu > li > a > img {
+    display: none;
+  }
+  /* performance */
+  .performence_content .para1,
+  .para2 {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1500px) {
+  .header_inner {
+    width: 80%;
+  }
+  .header_inner .logo {
+    position: static;
+  }
+  .header_gnb {
+    width: 100%;
+  }
+  /** 티켓, 메가폰, 사이렌 이미지 **/
+  .ticketBuy > img,
+  .notice > img,
+  .safeGuide > img {
+    width: 20%;
+    left: 6%;
+  }
+  /** 위에 큰 글씨 **/
+  .ticketBuy .txt a,
+  .notice .txt a,
+  .safeGuide .txt a {
+    font-family: "YdestreetB";
+    left: 30%;
+  }
+  /** 아래 작은글씨 한 줄 **/
+  .ticketBuy p {
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 52%;
+  }
+  .notice p {
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 54%;
+  }
+  .safeGuide p {
+    top: 65%;
+    transform: translate(-50%, -50%);
+    left: 52%;
+  }
+  /* 프로모션 /  할인 */
+  .exhib_container .exhib_txt {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50);
+  }
+  /* performance */
+  .performence_content .para1,
+  .para2 {
+    width: 80%;
+  }
+  /* seaFriends */
+  .seaFriends_inner {
+    height: 900px;
+  }
+  .turtle {
+    top: 15%;
+  }
+  .starFish {
+    bottom: 18%;
+  }
+  /* footer */
+  .coralRed {
+    top: 0;
+  }
+  .coralGreen {
+    top: 20%;
+  }
+  .bubble {
+    bottom: 35%;
+  }
+  /* quickBtns */
+  .quickBtns {
+    display: none;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .header_gnb {
+    width: 100%;
+  }
+  /* seaFriends */
+  .seaFriends_inner {
+    height: 700px;
+  }
+  .turtle {
+    top: 20%;
+  }
+  .starFish {
+    bottom: 15%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  body {
+    overflow-x: hidden;
+  }
+  /**** header ****/
+  .header_inner .logo {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header_gnb {
+    display: none;
+  }
+  .trigger {
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+  }
+  .mobile_menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 998;
+  }
+  /**** main_visual ****/
+  .mv_bg_wrap {
+    display: none;
+    width: 100%;
+  }
+  .hide {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+  }
+  .m_mv_bg_wrap {
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    transition: 0.3s;
+  }
+  header,
+  .main_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+  .main_inner {
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide .text_area {
+    text-align: center;
+  }
+  .slide .text_area h4 {
+    font-size: var(--h5);
+  }
+  .text_area h2 {
+    font-size: 30px;
+  }
+  .main_slideBtn {
+    display: none;
+  }
+  /**** mv_quick_menu ****/
+  .mv_quick_Menu {
+    width: 350px;
+    z-index: 997;
+  }
+  .ticketBuy,
+  .notice,
+  .safeGuide {
+    width: 100px;
+    height: 100px;
+  }
+  .ticketBuy,
+  .notice {
+    margin-right: 1rem;
+  }
+  .ticketBuy > img,
+  .notice > img,
+  .safeGuide > img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5%;
+    width: 30%;
+  }
+  .ticketBuy .txt a,
+  .notice .txt a,
+  .safeGuide .txt a {
+    font-size: var(--quickMenu-info);
+    font-weight: 100;
+    width: 80%;
+    top: 40%;
+    left: 60%;
+    transform: translateX(-50%);
+    margin: auto;
+  }
+  .ticketBuy p,
+  .notice p,
+  .safeGuide p {
+    font-size: var(--info-small);
+    font-weight: 100;
+    width: 78%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ticketBuy a > img,
+  .notice a > img,
+  .safeGuide a > img {
+    left: 50%;
+    transform: translate(-50%);
+    top: 85%;
+  }
+  /**** 배너 ****/
+  .banner {
+    display: none;
+  }
+  /**** 프로모션 / 할인 ****/
+  .promotion_content h2 {
+    width: 100%;
+    font-size: var(--h3);
+  }
+  /**** 전시존 ****/
+  .exhibition_inner {
+    width: 100%;
+    height: 80%;
+    overflow-x: hidden;
+  }
+  .exhib_container {
+    overflow: visible;
+    height: 650px;
+  }
+  .exhibition_slide_wrap {
+    margin-top: 2rem;
+    height: fit-content;
+  }
+  .exhibition_slide {
+    width: 290px;
+    height: 390px;
+    margin: 0 65px;
+  }
+  .exhibition_slide img {
+    width: 290px;
+    height: 390px;
+  }
+  .exhib_container .exhib_txt {
+    position: absolute;
+    margin-bottom: 2rem;
+    width: 100%;
+    left: 0%;
+  }
+  .exhib_container .exhib_txt h2 {
+    width: 100%;
+    font-size: var(--h3);
+  }
+  .exhib_container .exhib_txt p {
+    width: 90%;
+    font-size: var(--quickMenu-info);
+    margin: auto;
+  }
+  .exhibition_slideBtn {
+    display: none;
+  }
+  /**** 공연 ****/
+  .performance_inner {
+    width: 100%;
+  }
+  .performance_txt {
+    width: 100%;
+  }
+  .performance_txt h2 {
+    width: 100%;
+    font-size: var(--h3);
+  }
+  .performance_txt p {
+    width: 90%;
+    font-size: var(--quickMenu-info);
+    margin: auto;
+  }
+  .tab_wrap {
+    margin-top: 2rem;
+  }
+  .tab_menu {
+    display: none;
+  }
+  .tab_content {
+    display: flex;
+    flex-direction: column;
+    width: 346px;
+    height: 520px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .tab_content .sm_select {
+    display: block;
+  }
+  .sm_select select {
+    border: 2px solid var(--primary75);
+    width: 300px;
+  }
+  .sm_select select::placeholder {
+    font-size: var(--quickMenu-info);
+    font-weight: 300;
+  }
+  .perform {
+    display: block;
+  }
+  .tab_content .perform img {
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+  }
+  .performence_content h3 {
+    display: none;
+  }
+  .performence_content .para1,
+  .performence_content .para2 {
+    font-size: var(--subMenu-title2);
+    width: 80%;
+  }
+  .performence_content .para1 {
+    position: absolute;
+    bottom: 18%;
+  }
+  .performence_content .para2 {
+    position: absolute;
+    bottom: 2%;
+  }
+  .stingray {
+    display: none;
+  }
+  .octopus {
+    right: 8%;
+    bottom: 10%;
+  }
+  /**** 해양생물친구들 ****/
+  .seaFriends {
+    height: 800px;
+  }
+  .seaFriends_inner {
+    width: 100%;
+    height: 100%;
+  }
+  .seaFriends_txt {
+    margin: 4rem 1rem;
+  }
+  .seaFriends_txt h2 {
+    width: 100%;
+    font-size: var(--h3);
+  }
+  .seaFriends_txt p {
+    width: 100%;
+    font-size: var(--quickMenu-info);
+    margin: auto;
+    line-height: 20px;
+  }
+  .seaFriends_friends {
+    width: 90%;
+    height: 20%;
+    margin: 3rem auto;
+  }
+  .friends_box img {
+    border-radius: 30px;
+  }
+  .seaFriends_friends .who {
+    font-size: var(--quickMenu-info);
+  }
+  .friends_box::before {
+    border-radius: 30px;
+  }
+  .turtle {
+    right: 2%;
+    top: 35%;
+  }
+  .starFish {
+    left: 0%;
+    top: 80%;
+    width: 15%;
+  }
+  /**** 포토리뷰 ****/
+  .review_inner {
+    width: 100%;
+    height: 600px;
+  }
+  .review_inner .review_txt {
+    margin: 4rem auto;
+    width: fit-content;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .review_inner .review_txt h2 {
+    font-size: var(--h3);
+    margin-bottom: 0.8rem;
+  }
+  .review_inner .review_txt a > p {
+    width: 100%;
+    font-size: var(--info-small);
+  }
+  .review_slide_wrap {
+    top: 30%;
+  }
+  .review_slide_container {
+    width: 100%;
+  }
+  .review_slide_container a img {
+    width: 335px;
+    height: 223px;
+    top: 50%;
+  }
+  #rev_prev img,
+  #rev_next img {
+    width: 100%;
+    height: 100%;
+  }
+  /**** footer ****/
+  .footer_miniMenu {
+    position: absolute;
+    z-index: 3;
+  }
+  .footer_miniMenu a {
+    font-size: var(--quickMenu-info);
+    padding: 0 1rem;
+  }
+  .crab {
+    width: 30%;
+    height: 60%;
+    top: 16%;
+    left: 0;
+  }
+  .bubble {
+    left: 40%;
+    bottom: 57%;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+  }
+  .coralRed,
+  .coralGreen {
+    display: none;
+  }
+  .footer_txt {
+    top: 80%;
+    font-size: var(--subMenu-title2);
+  }
+  .footer_address {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: var(--subMenu-title2);
+  }
+  .footer_icons {
+    top: 50%;
+  }
+  .footer_cleanZone {
+    width: 20%;
+    height: 20%;
+  }
+  .footer_sns img {
+    width: 10%;
+    height: 10%;
+  }
+  /**** 배경 ****/
+
+  /**** 사이드퀵메뉴 ****/
+  .quickBtns {
+    display: none;
+  }
+}
