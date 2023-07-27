@@ -1,0 +1,115 @@
+<배경이미지>
+.mv_bg : header와 main_visual을 모두 감싸는 영역으로
+background:url() 을 사용하기 위함
+.mv_bg_wrap (배경이미지 ul)
+.bg_img (배경 각각의 li)
+
+.hide :모바일용 배경이미지를 감싸는 div
+.m_mv_bg_wrap : 모바일 배경이미지 ul
+
+
+<header>
+header
+.header_inner
+.header_gnb
+.mega_menu (헤더에 노출된 흰 글씨의 메뉴들)
+
+<.sub_menu_wrapper>
+.header_gnb (안에 있는 서브메뉴를 감싸는 큰 영역)
+.sub_menu (서서브메뉴 ol의 클래스명)
+.sub_inner (서서브메뉴의 구역을 구분하기 위한 클래스 (나중에 display:flex 줘야함))
+
+.mobile_menu : 모바일 햄버거메뉴를 감싸는 nav
+.m_icons : 모바일 메뉴에 포함된 홈, 검색, 장바구니 아이콘을 묶는 ul
+.m_menu_list : 모바일 메뉴 목록(ol)
+.m_sub_menu_wrapper : 서서브메뉴 ol를 감싸는 div
+.m_sub_menu: 서서브메뉴 ol
+.m_sub_inner : 서서브메뉴 감싸는 div (div로 묶은 이유는 서서브메뉴가 여러개이기 때문에 구분하기 위함)
+
+.trigger : 모바일에서 보이는 햄버거 메뉴바
+
+<main>
+.main_slideBtn
+.main_visual (미사용)
+.main_inner (이너 영역)
+.slider_container (overflow hidden 위한 콘테이너)
+.slider_wrap (슬라이드 전체 ul)
+.slide mv_slide01 (각각 li)
+.text_area (글자 영역 묶을 것)
+   .main_titleMini (흰색글씨 h4 - 미사용. 그냥 h4로 줌)
+   .main_title (주황색 글씨 h2 - 미사용. 그냥 h2로 줌)
+.mv_quick_menu (주황배경 퀵메뉴)
+
+<section1>
+.banner (파란 배너)
+--------------------------------------------
+<quick menu>
+.quick_menu(버튼 전체영역)
+.quick_btn(버튼 각각)
+--------------------------------------------
+<section .promotion>
+.promotion (섹션 이름)
+.promotion_inner (네개 감싸는 영역)
+.promotion_box (하나의 프로모션 박스 감싸는 영역)
+.promotion_img (윗쪽 이미지)
+.promotion_discount (위에 할인 이미지)
+.promotion_txt (아래 글)
+.promotion_bg (돛단배 배경)
+--------------------------------------------
+<section .exhibition>
+.exhibition_bg (배경)
+.exhibition_slideBtn
+.exhib_slider_container (슬라이드 콘테이너 영역 overflow hidden용. 이너와 같음)
+.exhibition_slide_wrap (ul)
+.exhibition_slide (이미지와 태그 하나 li)
+.exhibition_img (각각 이미지)
+.exhibition_nameTag (이미지에 붙은 네임태그)
+--------------------------------------------
+<section .performence>
+.performence (섹션이름)
+.performence_inner
+.perform (각각 id 안에 이미지와 텍스트박스를 감싸는 div)
+.performence_content  (img말고 글자영역)
+.para1, .para2 .performence_content (안의 공연내용설명, 관람시간 등)
+.performence_img (각각 메뉴 안에 들어있는 이미지)
+#performence_shark (상어먹이주기)
+#performence_mermaid (인어공주이야기)
+#performence_penguin (펭귄먹이주기)
+#performence_oter (수달먹이주기)
+.performence_stingrey (옆에 가오리)
+.performence_octopus(옆에 문어)
+--------------------------------------------
+<section .seaFriends>
+.seaFriends (전체영역)
+.seaFriends_inner
+.seaFriends_txt (제목과 설명 영역)
+.seaFriends_friends (그리드 9개)
+.seaFriends_wrap (위치조정 위한 감싸주는 div)
+.friends_box (hover시 숨겨졌던 텍스트가 보이게 하기 위한 묶음박스)
+.seaFriends_turtle (옆에 거북쓰)
+.seaFriends_starFish (옆에 불가사리)
+--------------------------------------------
+<section .review>
+.review_inner (이너)
+.review_txt (제목과 설명)
+.review_slide_wrap (버튼포함 사진영역 전체 감쌈)
+.review_slide_container (버튼없이 사진영역만 감쌈 오버플로우 히든 여기에 줄 것)
+.review
+.review_slideBtn (슬라이드버튼)
+.review_img (이미지)
+--------------------------------------------
+<footer>
+.footer
+.footer_miniMenu (회사소개, 정책, 해양생물보호 더많은 어쩌구)
+.footer_bg (땅바닥 이미지)
+.footer_address (한줄짜리 주소)
+.footer_info (밑에 떨거지)
+.footer_cleanZone (클린존 이미지)
+.footer_sns (sns 감싸는 큰 영역
+.footer_bubble (방울 배경)
+.footer_crab (게)
+.footer_coralRed (붉은산호)
+.footer_coralGreen (녹색산호)
+--------------------------------------------
+<quickBtns> : 사이드퀵메뉴
+.quickBtns (사이드 퀵메뉴 감사는 div)

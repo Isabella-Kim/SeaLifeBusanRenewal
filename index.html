@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🦈Sea Life Busan</title>
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/mobile_subMenu.css">
+    <!-- slick -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- 헤더/메인비주얼을 아우르는 백그라운드 이미지 -->
+    <div class="mv_bg">
+      <ul class="mv_bg_wrap">
+        <li class="bg_img">
+          <img src="02.디자인/images/mainVisualBG/1.svg" alt="" />
+        </li>
+        <li class="bg_img">
+          <img src="02.디자인/images/mainVisualBG/2.svg" alt="" />
+        </li>
+        <li class="bg_img">
+          <img src="02.디자인/images/mainVisualBG/3.svg" alt="" />
+        </li>
+      </ul>
+      <div class="hide">
+        <ul class="m_mv_bg_wrap">
+          <li><img src="02.디자인/images/mobile/mobile_jellyFish.svg" alt=""></li>
+          <li><img src="02.디자인/images/mobile/mobile_shark.svg" alt=""></li>
+          <li><img src="02.디자인/images/mobile/mobile_turtle.svg" alt=""></li>
+        </ul>
+      </div>
+      <!-- 헤더 -->
+      <header>
+        <div class="header_inner">
+          <a href="index.html"
+            ><img src="02.디자인/images/logo.webp" alt="" class="logo"
+          /></a>
+          <div class="header_gnb">
+            <ul class="mega_menu">
+              <!-- 입장권 & 프로모션 -->
+              <li>
+                <a href="#none"
+                  >입장권 & 프로모션
+                  <img src="02.디자인/images/header/DoubleDown.svg" alt=""
+                /></a>
+                <div class="sub_menu_wrapper">
+                  <ol class="sub_menu">
+                    <li>
+                      <div class="sub_inner">
+                        <h3>입장권 및 프로모션</h3>
+                        <ol>
+                          <li><a href="sub01.html">SEA LIFE 연간회원권</a></li>
+                          <li><a href="sub01.html">온라인 티켓 구매하기</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sub_inner">
+                        <h3>단체 입장권</h3>
+                        <ol>
+                          <li><a href="sub01.html">일반 단체 예약</a></li>
+                          <li><a href="sub01.html">학생 단체 예약</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <!-- 내부 & 공연안내 -->
+              <li>
+                <a href="#none"
+                  >내부 & 공연안내
+                  <img src="02.디자인/images/header/DoubleDown.svg" alt=""
+                /></a>
+                <div class="sub_menu_wrapper">
+                  <ol class="sub_menu">
+                    <li>
+                      <div class="sub_inner">
+                        <h3>SEA LIFE 부산 전시존</h3>
+                        <ol>
+                          <li><a href="#none">해파리 연구소</a></li>
+                          <li><a href="#none">모여라! 상어탐험대</a></li>
+                          <li><a href="#none">바다거북 구조대</a></li>
+                          <li><a href="#none">수달 존</a></li>
+                          <li><a href="#none">더 보기</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sub_inner">
+                        <h3>SEA LIFE 부산 친구들</h3>
+                        <ol>
+                          <li><a href="#none">자카스펭귄</a></li>
+                          <li><a href="#none">작은발톱수달</a></li>
+                          <li><a href="#none">바다거북</a></li>
+                          <li><a href="#none">샌드타이거상어</a></li>
+                          <li><a href="#none">더보기</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sub_inner">
+                        <h3>SEA LIFE 부산 공연안내</h3>
+                        <ol>
+                          <li><a href="#none">스릴만점 상어먹이주기</a></li>
+                          <li><a href="#none">귀여운 펭귄 먹이주기</a></li>
+                          <li><a href="#none">아기수달 먹이주기</a></li>
+                          <li><a href="#none">바다마법사와 인어공주</a></li>
+                          <li><a href="#none">상어 생태 설명회</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sub_inner">
+                        <h3>SEA LIFE 부산 체험시설</h3>
+                        <ol>
+                          <li><a href="#none">상어투명보트</a></li>
+                          <li><a href="#none">VR 체험존</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <!-- 씨라이프 부산 -->
+              <li>
+                <a href="#none"
+                  >씨라이프 부산
+                  <img src="02.디자인/images/header/DoubleDown.svg" alt=""
+                /></a>
+                <div class="sub_menu_wrapper">
+                  <ol class="sub_menu">
+                    <li>
+                      <div class="sub_inner">
+                        <h3>이용안내</h3>
+                        <ol>
+                          <li><a href="#none">운영시간</a></li>
+                          <li><a href="#none">층별안내</a></li>
+                          <li><a href="#none">위치 & 교통/주차</a></li>
+                          <li><a href="#none">장애인 편의시설</a></li>
+                          <li><a href="sub02.html">안전 수칙</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sub_inner">
+                        <h3>고객센터</h3>
+                        <ol>
+                          <li><a href="#none">자주 묻는 질문</a></li>
+                          <li><a href="#none">1:1 문의하기</a></li>
+                          <li><a href="#none">구매 취소 신청</a></li>
+                        </ol>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <!-- 브릭맨 원더월드 -->
+              <li><a href="#none">브릭맨 원더월드</a></li>
+            </ul>
+            <div class="icons">
+              <a href="#none"
+                ><img
+                  src="02.디자인/images/header/search.svg"
+                  alt=""
+                  class="search"
+              /></a>
+              <a href=""
+                ><img
+                  src="02.디자인/images/header/ShoppingCart.svg"
+                  alt=""
+                  class="cart"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <nav class="mobile_menu">
+          <ul class="m_icons">
+            <a href="#none"
+              ><img src="02.디자인/images/header/HouseLine.svg" alt=""
+            /></a>
+            <a href="#none"
+              ><img src="02.디자인/images/header/search.svg" alt=""
+            /></a>
+            <a href="#none"
+              ><img src="02.디자인/images/header/ShoppingCart.svg" alt=""
+            /></a>
+          </ul>
+          <ol class="m_menu_list">
+            <!-- 입장권 및 프로모션 -->
+            <li>
+              <a href="#none">
+                입장권 & 프로모션
+                <img src="02.디자인/images/header/DoubleDown.svg" alt="" />
+              </a>
+              <div class="m_sub_menu_wrapper">
+                <ol class="m_sub_menu">
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>입장권 및 프로모션</h3>
+                      <ol>
+                        <li><a href="sub01.html">SEA LIFE 연간회원권</a></li>
+                        <li><a href="sub01.html">온라인 티켓 구매하기</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>단체 입장권</h3>
+                      <ol>
+                        <li><a href="sub01.html">일반 단체 예약</a></li>
+                        <li><a href="sub01.html">학생 단체 예약</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <!-- 내부 % 공연안내 -->
+            <li>
+              <a href="#none"
+                >내부 & 공연안내
+                <img src="02.디자인/images/header/DoubleDown.svg" alt=""
+              /></a>
+              <div class="m_sub_menu_wrapper">
+                <ol class="m_sub_menu">
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>SEA LIFE 부산 전시존</h3>
+                      <ol>
+                        <li><a href="#none">해파리 연구소</a></li>
+                        <li><a href="#none">모여라! 상어탐험대</a></li>
+                        <li><a href="#none">바다거북 구조대</a></li>
+                        <li><a href="#none">수달 존</a></li>
+                        <li><a href="#none">더 보기</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>SEA LIFE 부산 친구들</h3>
+                      <ol>
+                        <li><a href="#none">자카스펭귄</a></li>
+                        <li><a href="#none">작은발톱수달</a></li>
+                        <li><a href="#none">바다거북</a></li>
+                        <li><a href="#none">샌드타이거상어</a></li>
+                        <li><a href="#none">더보기</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>SEA LIFE 부산 공연안내</h3>
+                      <ol>
+                        <li><a href="#none">스릴만점 상어먹이주기</a></li>
+                        <li><a href="#none">귀여운 펭귄 먹이주기</a></li>
+                        <li><a href="#none">아기수달 먹이주기</a></li>
+                        <li><a href="#none">바다마법사와 인어공주</a></li>
+                        <li><a href="#none">상어 생태 설명회</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>SEA LIFE 부산 체험시설</h3>
+                      <ol>
+                        <li><a href="#none">상어투명보트</a></li>
+                        <li><a href="#none">VR 체험존</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <!-- 씨라이프 부산 -->
+            <li>
+              <a href="#none"
+                >씨라이프 부산
+                <img src="02.디자인/images/header/DoubleDown.svg" alt=""
+              /></a>
+              <div class="m_sub_menu_wrapper">
+                <ol class="m_sub_menu">
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>이용안내</h3>
+                      <ol>
+                        <li><a href="#none">운영시간</a></li>
+                        <li><a href="#none">층별안내</a></li>
+                        <li><a href="#none">위치 & 교통/주차</a></li>
+                        <li><a href="#none">장애인 편의시설</a></li>
+                        <li><a href="sub02.html">안전 수칙</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="m_sub_inner">
+                      <h3>고객센터</h3>
+                      <ol>
+                        <li><a href="#none">자주 묻는 질문</a></li>
+                        <li><a href="#none">1:1 문의하기</a></li>
+                        <li><a href="#none">구매 취소 신청</a></li>
+                      </ol>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <!-- 브릭맨 원더월드 -->
+            <li><a href="#none">브릭맨 원더월드</a></li>
+          </ol>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <!-- 메인비주얼 / 메인퀵버튼 / 메인비주얼 슬라이드 버튼 -->
+      <main>
+        <div class="main_inner">
+          <div class="slider_container">
+            <ul class="slider_wrap">
+              <li class="slide mv_slide01">
+                <div class="text_area">
+                  <h4>신비한 해파리연구소 OPEN!</h4>
+                  <h2>말랑말랑 해파리의 비밀을 찾아보자!</h2>
+                </div>
+              </li>
+              <li class="slide mv_slide02">
+                <div class="text_area">
+                  <h4>모여라! 상어탐험대</h4>
+                  <h2>상어들의 비밀을 찾아 떠나볼까요?</h2>
+                </div>
+              </li>
+              <li class="slide mv_slide03">
+                <div class="text_area">
+                  <h4>바다거북 구조대가 되어보세요!</h4>
+                  <h2>SEA LIFE Busan Aquarium</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="mv_quick_Menu">
+            <div class="ticketBuy">
+              <img
+                src="02.디자인/images/mainVisualQuickMenu/Ticket.svg"
+                alt=""
+              />
+              <div class="txt">
+                <a href="sub01.html">티켓 구매</a>
+                <p>온라인으로 구매하세요!</p>
+              </div>
+              <a href="sub01.html"
+                ><img
+                  src="02.디자인/images/mainVisualQuickMenu/ArrowCircleRight.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="notice">
+              <img
+                src="02.디자인/images/mainVisualQuickMenu/Megaphone.svg"
+                alt=""
+              />
+              <div class="txt">
+                <a href="#none">공지사항</a>
+                <p>SEA LIFE BUSAN에서 알려드립니다!</p>
+              </div>
+              <a href="#none"
+                ><img
+                  src="02.디자인/images/mainVisualQuickMenu/ArrowCircleRight.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="safeGuide">
+              <img
+                src="02.디자인/images/mainVisualQuickMenu/Siren.svg"
+                alt=""
+              />
+              <div class="txt">
+                <a href="sub02.html">안전 수칙</a>
+                <p>방문 전 꼭 알아두세요!</p>
+              </div>
+              <a href="sub02.html"
+                ><img
+                  src="02.디자인/images/mainVisualQuickMenu/ArrowCircleRight.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <!-- 슬라이드 버튼 -->
+          <div class="main_slideBtn">
+            <a href="#none" id="prev">
+              <img
+                src="02.디자인/images/slideBtn/mainVisual/prev.svg"
+                alt=""
+              />
+            </a>
+            <a href="#none" id="next">
+              <img
+                src="02.디자인/images/slideBtn/mainVisual/next.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- 메인비주얼 하단 배너 영역 -->
+    <section class="banner">
+      <div class="banner_inner">
+        <p>방문일 전 사전예약으로 즉시 할인</p>
+        <p>모바일 QR 코드로 빠른 입장</p>
+        <p>방문일 전 일정변경 가능</p>
+      </div>
+    </section>
+
+    <!-- 프로모션 / 할인 -->
+    <section class="promotion">
+      <div class="promotion_inner">
+        <div class="promotion_content">
+          <h2>온라인 & 사전예약 할인 EVENT</h2>
+          <div class="swiper mySwiper">
+            <div class="promotion_box_wrap swiper-wrapper">
+              <div class="promotion_box swiper-slide">
+                <a href="#none">
+                  <img
+                    src="02.디자인/images/promotion/01_gardenEll.webp"
+                    alt=""
+                    class="promotion_img"
+                  />
+                </a>
+                <div class="promotion_txt">
+                  <a href="#none">
+                    <h4>
+                      대/소인 입장권<br />
+                      ♡이번주 특가♡<br />
+                      장마 초특가! EVENT♡
+                    </h4>
+                  </a>
+                  <a href="#none">
+                    <p>
+                      사전예약시 최대 27% 할인 혜택이!<br />
+                      얼른 아콰리움 방문하셔서 소중한 추억 남기세요♡
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="promotion_box swiper-slide">
+                <a href="#none">
+                  <img
+                    src="02.디자인/images/promotion/02_otter.webp"
+                    alt=""
+                    class="promotion_img"
+                  />
+                </a>
+                <div class="promotion_txt">
+                  <a href="#none">
+                    <h4>
+                      대/소인 입장권<br />
+                      ♡이번주 특가♡<br />
+                      장마 초특가! EVENT♡
+                    </h4>
+                  </a>
+                  <a href="#none">
+                    <p>
+                      사전예약시 최대 27% 할인 혜택이!<br />
+                      얼른 아콰리움 방문하셔서 소중한 추억 남기세요♡
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="promotion_box swiper-slide">
+                <a href="#none">
+                  <img
+                    src="02.디자인/images/promotion/03_stingray.webp"
+                    alt=""
+                    class="promotion_img"
+                  />
+                </a>
+                <div class="promotion_txt">
+                  <a href="#none">
+                    <h4>
+                      대/소인 입장권<br />
+                      ♡이번주 특가♡<br />
+                      장마 초특가! EVENT♡
+                    </h4>
+                  </a>
+                  <a href="#none">
+                    <p>
+                      사전예약시 최대 27% 할인 혜택이!<br />
+                      얼른 아콰리움 방문하셔서 소중한 추억 남기세요♡
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="promotion_box swiper-slide">
+                <a href="#none">
+                  <img
+                    src="02.디자인/images/promotion/04_shark.webp"
+                    alt=""
+                    class="promotion_img"
+                  />
+                </a>
+                <div class="promotion_txt">
+                  <a href="#none">
+                    <h4>
+                      대/소인 입장권<br />
+                      ♡이번주 특가♡<br />
+                      장마 초특가! EVENT♡
+                    </h4>
+                  </a>
+                  <a href="#none">
+                    <p>
+                      사전예약시 최대 27% 할인 혜택이!<br />
+                      얼른 아콰리움 방문하셔서 소중한 추억 남기세요♡
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 배경이미지가 깔리는 부분 -->
+    <div class="bodyBg">
+    <!-- 전시존 -->
+    <section class="exhibition">
+      <div class="exhibition_inner">
+        <div class="exhib_container">
+          <div class="exhib_txt">
+            <h2>씨라이프 부산 전시존</h2>
+            <p>
+              부산 실내 데이트코스로 제격인 아쿠아리움 전시존을 소개합니다.
+            </p>
+          </div>
+          <ul class="exhibition_slide_wrap autoplay">
+            <li class="exhibition_slide slide_jellyFish">
+              <a href="#none"><img
+                src="02.디자인/images/exhibition/jellyFish.webp"
+                alt=""
+              /></a>
+            </li>
+            <li class="exhibition_slide slide_shark">
+              <a href="#none"><img src="02.디자인/images/exhibition/shark.webp" alt="" /></a>
+            </li>
+            <li class="exhibition_slide slide_turtleSaver">
+             <a href="#none"> <img
+              src="02.디자인/images/exhibition/turtleSaver.webp"
+              alt=""
+            />
+          </li></a>
+            <li class="exhibition_slide slide_otter">
+             <a href="#none"> <img src="02.디자인/images/exhibition/otter.webp" alt="" /></a>
+            </li>
+            <li class="exhibition_slide slide_rockpool">
+             <a href="#none"> <img
+              src="02.디자인/images/exhibition/rockpool.webp"
+              alt=""
+            /></a>
+            </li>
+            <li class="exhibition_slide slide_seaatnight">
+              <a href="#none"><img src="02.디자인/images/exhibition/seaatnight.webp" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 슬라이드 버튼 -->
+        <div class="exhibition_slideBtn">
+          <a href="#none" id="exhib_prev">
+            <img
+              src="02.디자인/images/slideBtn/exhibition/prev.svg"
+              alt=""
+            />
+          </a>
+          <a href="#none" id="exhib_next">
+            <img
+              src="02.디자인/images/slideBtn/exhibition/next.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 공연 / 체험 -->
+    <section class="performance">
+      <div class="performance_inner">
+        <div class="performance_txt">
+          <h2>SEA LIFE 부산 공연</h2>
+          <p>
+            아름다운 산호마을 인어공주 공연부터 짜릿한 상어 먹이주기 공연,
+            귀여운 펭귄 먹이주기 공연까지!<br />
+            해운대 데이트를찾는 커플에게는 로맨틱한 시간을, 아이들에게는 꿈과
+            상상력의 시간을 선사합니다.
+          </p>
+        </div>
+        <div class="tab_wrap">
+          <!-- 탭메뉴 버튼영역 -->
+          <ul class="tab_menu">
+            <li>
+              <a href="#performence_shark" class="active"
+                >스릴만점 상어먹이주기</a
+              >
+            </li>
+            <li>
+              <a href="#performence_mermaid"
+                >바다마법사와 인어공주
+            </li>
+            <li>
+              <a href="#performence_penguin">귀여운 펭귄 먹이주기</a>
+            </li>
+            <li>
+              <a href="#performence_otter">아기수달 먹이주기</a>
+            </li>
+          </ul>
+          
+          <!-- 콘텐츠 영역 -->
+          <div class="tab_content">
+            <!-- 반응형에 보일 select -->
+          <div class="sm_select" id="tab_select">
+            <select name="" id="tabmenu">
+              <option value="#performence_shark">스릴만점 상어먹이주기</option>
+              <option value="#performence_mermaid">바다마법사와 인어공주</option>
+              <option value="#performence_penguin">귀여운 펭귄 먹이주기</option>
+              <option value="#performence_otter">아기수달 먹이주기</option>
+            </select>
+          </div>
+            <div id="performence_shark">
+              <div class="perform">
+                <img
+                src="02.디자인/images/performence/sea-life-busan-상어먹이공연-7.webp"
+                alt=""
+              />
+              <div class="performence_content">
+                <h3>스릴만점 상어먹이주기 공연</h3>
+                <p class="para1">
+                  3명의 아쿠아리스트들이 상어에게 직접 손으로 먹이를 주는
+                  모습을 볼 수 있는, 오직 SEA LIFE 부산아쿠아리움에서만 볼 수
+                  있는 공연! 아슬아슬 스릴만점 먹이주기 공연을 SEA LIFE
+                  부산아쿠아리움 지하 3층 열대바다에서 만나보세요!
+                </p>
+                <p class="para2">
+                  관람일자 : 매일<br />
+                  시간: 12:00 / 16:00<br />
+                  가격 : 관람료 무료<br />
+                  위치 : SEA LIFE Busan, 지하 3층 바다극장
+                </p>
+              </div>
+              </div>
+            </div>
+            <div id="performence_mermaid">
+              <div class="perform">
+                <img
+                src="02.디자인/images/performence/mermaid.webp"
+                alt=""
+              />
+              <div class="performence_content">
+                <h3>바다마법사와 인어공주 이야기</h3>
+                <p class="para1">
+                  평소 물속 생물들을 사랑하는 한 소녀. <br />
+                  물 속을 자유롭게 다니며 춤추고 싶은 소녀의 소원을 이뤄주기
+                  위해 바다마법사가 산호마을에 나타났다!
+                </p>
+                <p class="para2">
+                  관람일자 : 매일<br />
+                  시간: 11:20 / 13:00 / 14:30 / 16:40<br />
+                  가격 : 관람료 무료<br />
+                  위치 : SEA LIFE Busan, 지하 3층 7m 산호 수조
+                </p>
+              </div>
+              </div>
+            </div>
+            <div id="performence_penguin">
+              <div class="perform">
+                <img
+                src="02.디자인/images/performence/펭귄식사1.webp"
+                alt=""
+              />
+              <div class="performence_content">
+                <h3>귀여운 펭귄 먹이주기 공연</h3>
+                <p class="para1">
+                  아쿠아리스트가 직접 먹이를 주면서 귀여운 펭귄과 서로
+                  교감하는 모습을 감상할 수 있어요. 귀여운 펭귄들의 먹방을
+                  눈앞에서 즐겨보세요!
+                </p>
+                <p class="para2">
+                  관람일자 : 매일<br />
+                  시간: 11:40 / 15:30<br />
+                  가격 : 관람료 무료<br />
+                  위치 : SEA LIFE Busan, 지하 2층 펭귄수조
+                </p>
+              </div>
+              </div>
+            </div>
+            <div id="performence_otter">
+              <div class="perform">
+                <img
+                src="02.디자인/images/performence/수달식사1.webp"
+                alt=""
+              />
+              <div class="performence_content">
+                <h3>아기수달 먹이주기 공연</h3>
+                <p class="para1">
+                  작고 귀여운 아기수달 4마리! 아쿠아리스트가 주는 먹이를
+                  앙증맞은 두손으로 받아먹는 모습을 직접 만나볼 수 있어요~
+                  누가 누가 더 잘 먹는지 지금 두 눈으로 확인해 볼까요?
+                </p>
+                <p class="para2">
+                  관람일자 : 매일<br />
+                  시간: 10:30 / 15:00<br />
+                  가격 : 관람료 무료<br />
+                  위치 : SEA LIFE Busan, 지하 3층 수달 수조
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stingray">
+        <img src="02.디자인/images/deco_seafriends/stingray.svg" alt="" data-aos="fade-up"
+        data-aos-offset="450"
+        data-aos-duration="500" data-aos-once="true">
+      </div>
+      <div class="octopus">
+        <img src="02.디자인/images/deco_seafriends/octopus.svg" alt="" data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="500" data-aos-once="true">
+      </div>
+    </section>
+
+    <!-- 해양생물친구들 -->
+    <section class="seaFriends">
+      <div class="seaFriends_inner">
+        <div class="seaFriends_txt">
+          <h2>씨라이프 부산의 다양한 해양 생물 친구들을 만나보세요!</h2>
+          <p>
+            씨라이프 부산 아쿠아리움은 250종, 10,000여 마리의 해양 생물들을 비롯해 총 8개의 전시존을 갖추고 있습니다<br>
+            작고 귀여운 수달부터 두꺼운 입술을 가진 나폴레옹 피쉬, 화려한 줄무늬가 매력적인 가든일까지<br>
+            아래 버튼을 클릭하여 씨라이프 부산 아쿠아리움에서 볼 수 있는 해양 생물에 대해 자세히 알아보세요
+          </p>
+        </div>
+        <div class="seaFriends_friends">
+          <div class="seaFriends_wrap">
+            <div class="friends_box">
+              <a href="#none" class="img"><img src="02.디자인/images/friends/sea-life-busan-푸른바다거북-1.webp" alt=""></a>
+              <a href="#none" class="who">푸른바다거북</a>
+            </div>
+          <div class="friends_box">
+            <a href="#none" class="img">
+              <img src="02.디자인/images/friends/그레이너스-상어.webp" alt="">
+            </a>
+            <a href="#none" class="who">그레이너스<br>상어</a>
+          </div>
+          <div class="friends_box">
+            <a href="#none" class="img"><img src="02.디자인/images/friends/나폴레옹피쉬.webp" alt=""></a>
+            <a href="#none" class="who">나폴레옹<br>피쉬</a>
+          </div>
+          <div class="friends_box">
+            <a href="#none" class="img"><img src="02.디자인/images/friends/보름달물해파리.webp" alt=""></a>
+            <a href="#none" class="who">보름달<br>물 해파리</a>
+          </div>
+          <div class="friends_box">
+            <a href="#none" class="img"><img src="02.디자인/images/friends/수달-말복.webp" alt=""></a>
+            <a href="#none" class="who">수달</a>
+          </div>
+          <div class="friends_box">
+            <a href="#none" class="img"><img src="02.디자인/images/friends/스플랜디드-가든일.webp" alt=""></a>
+            <a href="#none" class="who">스플랜디드<br>가든일</a>
+          </div>
+         <div class="friends_box">
+          <a href="#none" class="img"><img src="02.디자인/images/friends/자카스펭귄.webp" alt=""></a>
+          <a href="#none" class="who">자카스펭귄</a>
+         </div>
+         <div class="friends_box">
+          <a href="#none" class="img"><img src="02.디자인/images/friends/카우노즈레이.webp" alt=""></a>
+          <a href="#none" class="who">카우노즈레이</a>
+         </div>
+          <div class="friends_box">
+            <a href="#none" class="img"><img src="02.디자인/images/friends/해마2.webp" alt=""></a>
+            <a href="#none" class="who">해마</a>
+          </div>
+          </div>
+        </div>
+        <div class="turtle"><img src="02.디자인/images/deco_seafriends/seaTurtle.svg" alt="" data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="500" data-aos-once="true"></div>
+        <div class="starFish"><img src="02.디자인/images/deco_seafriends/starFish.svg" alt="" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="500" data-aos-once="true"></div>
+      </div>
+    </section>
+
+    <!-- 포토리뷰 -->
+    <section class="review">
+      <div class="review_inner">
+        <div class="review_txt">
+          <h2>포토 리뷰</h2>
+          <a href="#none">네이버 리뷰 바로가기 <img src="02.디자인/images/review/CaretRight.svg" alt="" class="arrow"></a>
+        </div>
+        <div class="review_slide_wrap">
+          <ul class="review_slide_container">
+            <li><a href="#none"><img src="02.디자인/images/review/fishPool.jpg" alt=""></a></li>
+            <li> <a href="#none"><img src="02.디자인/images/review/shark.jpg" alt=""></a></li>
+            <li><a href="#none"><img src="02.디자인/images/review/stingray.jpg" alt=""></a></li>
+            <li> <a href="#none"><img src="02.디자인/images/review/yellowFish.jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <!-- 슬라이드 버튼 -->
+        <div class="review_slideBtn">
+          <a href="#none" id="rev_prev" class="prev"><img src="02.디자인/images/slideBtn/review/prev.svg" alt=""></a>
+          <a href="#none" id="rev_next" class="next"><img src="02.디자인/images/slideBtn/review/next.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_miniMenu">
+        <div class="miniMenu_wrap">
+          <a href="#none">회사소개</a>
+          <a href="#none">정책</a>
+          <a href="#none">해양생물보호</a>
+          <a href="#none">더 많은 SEA LIFE 보기</a>
+        </div>
+      </div>
+      <div class="footer_inner">
+       <div class="footer_txt">
+        <p class="footer_address">48100 부산광역시 해운대구 해운대해변로 266(중동) (주)멀린엔터테인먼트코리아 </p>
+        <p class="footer_info">
+          사업자등록번호 617-81-61162 | 대표이사 이성호 & 로버트마크스미스 | 통신판매업신고번호 제2006-부산해운-66423호<br>
+          대표전화 051-740-1700 | 팩스 051-740-1717 | 단체문의 051-740-1711
+        </p>
+       </div>
+        <div class="footer_icons">
+          <img src="02.디자인/images/footer/clean-zone.webp" alt="" class="footer_cleanZone">
+          <div class="footer_sns">
+            <a href="#none"><img src="02.디자인/images/footer/facebook.svg" alt=""></a>
+            <a href="#none"><img src="02.디자인/images/footer/blog.svg" alt=""></a>
+            <a href="#none"><img src="02.디자인/images/footer/instagram.svg" alt=""></a>
+            <a href="#none"><img src="02.디자인/images/footer/youTube.svg" alt=""></a>
+          </div>
+         </div>
+         <img src="02.디자인/images/deco_seafriends/coralRed.svg" alt="" class="coralRed">
+        <img src="02.디자인/images/deco_seafriends/coralGreen.svg" alt="" class="coralGreen">
+        <img src="02.디자인/images/deco_seafriends/crab.svg" alt="" class="crab">
+        <img src="02.디자인/images/deco_seafriends/bubble.svg" alt="" class="bubble">
+      </div>
+    </footer>
+
+    <!-- quickBtns -->
+    <div class="quickBtns">
+      <a href="sub01.html"><img src="02.디자인/images/quickMenuBtn/buy.svg" alt=""></a>
+      <a href="#none"><img src="02.디자인/images/quickMenuBtn/myCart.svg" alt=""></a>
+      <a href="#none"><img src="02.디자인/images/quickMenuBtn/newLetter.svg" alt=""></a>
+      <a href="#"><img src="02.디자인/images/quickMenuBtn/top.svg" alt=""></a>
+    </div>
+
+    <!-- js -->
+    <script src="js/subMenu.js"></script>
+    <script src="js/mainVisualSlide.js"></script>
+    <script src="js/quickBtns.js"></script>
+    <script src="js/exhibitionSlide.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/responsiveTrigger.js"></script>
+    <script src="js/resonsiveAccordionMenu.js"></script>
+    <script src="js/responsiveACMenuAppear.js"></script>
+    <!-- slick -->
+    <script src="slick/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script src="js/responsivePromotion.js"></script>
+  </body>
+</html>
