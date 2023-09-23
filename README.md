@@ -110,4 +110,8 @@
 
 ## 🚀 링크
 
+- [브레인 스토밍](https://www.figma.com/file/oBwENj8ztJ16EG1kEIcWfQ/SeaLifeBusan_BrainStorming?type=whiteboard&node-id=0%3A1&t=MtGvKwQ1gnpEXTrR-1)
+
+- [와이어프레임 및 디자인](https://www.figma.com/file/z1aPqEK3Z926sfrsXhoomu/SeaLifeBusan_Renewal?type=design&node-id=0%3A1&mode=design&t=aPTFUGLy2yzJkINf-1)
+
 - [리뉴얼 사이트](https://isabella-kim.github.io/SeaLifeBusanRenewal/)
